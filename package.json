@@ -1,0 +1,54 @@
+{
+  "name": "docx-viewer",
+  "displayName": "DOCX Viewer",
+  "description": "Preview Microsoft Word (.docx) documents directly in VSCode",
+  "version": "0.1.0",
+  "publisher": "lxvs",
+  "repository": "https://github.com/lxvs/docx-viewer",
+  "license": "MIT",
+  "icon": "media/icon.png",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": ["Other"],
+  "keywords": ["docx", "word", "preview", "viewer", "office"],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "docx-viewer.preview",
+        "title": "Preview DOCX File",
+        "category": "DOCX Viewer"
+      }
+    ],
+    "customEditors": [
+      {
+        "viewType": "docx-viewer.editor",
+        "displayName": "DOCX Preview",
+        "selector": [
+          {
+            "filenamePattern": "*.docx"
+          }
+        ],
+        "priority": "default"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "package": "npm run check-types && node esbuild.js --production",
+    "check-types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.0",
+    "@types/vscode": "^1.75.0",
+    "esbuild": "^0.20.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "mammoth": "^1.7.2"
+  }
+}
