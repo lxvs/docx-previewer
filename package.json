@@ -2,7 +2,7 @@
   "name": "docx-previewer",
   "displayName": "Docx Previewer",
   "description": "Preview Microsoft Word (.docx) documents directly in VSCode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "lxvs",
   "repository": "https://github.com/lxvs/docx-previewer",
   "license": "MIT",
