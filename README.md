@@ -1,4 +1,4 @@
-# DOCX Viewer for VSCode
+# Docx Previewer for VSCode
 
 Preview Microsoft Word (.docx) documents directly in VSCode with a clean, paper-like view.
 
@@ -13,8 +13,8 @@ Preview Microsoft Word (.docx) documents directly in VSCode with a clean, paper-
 ## Usage
 
 1. Open any `.docx` file in VSCode
-2. The file will automatically open in the DOCX Preview editor
-3. Alternatively, use the Command Palette and run "DOCX Viewer: Preview DOCX File"
+2. The file will automatically open in the Docx Preview editor
+3. Alternatively, use the Command Palette and run "Docx Previewer: Preview Docx File"
 
 ## Requirements
 

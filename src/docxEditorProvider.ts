@@ -5,7 +5,7 @@ import * as crypto from 'crypto';
 import * as mammoth from 'mammoth';
 
 export class DocxEditorProvider implements vscode.CustomReadonlyEditorProvider {
-  public static readonly viewType = 'docx-viewer.editor';
+  public static readonly viewType = 'docx-previewer.editor';
 
   public static register(context: vscode.ExtensionContext): vscode.Disposable {
     const provider = new DocxEditorProvider(context);

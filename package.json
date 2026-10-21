@@ -1,31 +1,31 @@
 {
-  "name": "docx-viewer",
-  "displayName": "DOCX Viewer",
+  "name": "docx-previewer",
+  "displayName": "Docx Previewer",
   "description": "Preview Microsoft Word (.docx) documents directly in VSCode",
   "version": "0.1.0",
   "publisher": "lxvs",
-  "repository": "https://github.com/lxvs/docx-viewer",
+  "repository": "https://github.com/lxvs/docx-previewer",
   "license": "MIT",
   "icon": "media/icon.png",
   "engines": {
     "vscode": "^1.75.0"
   },
   "categories": ["Other"],
-  "keywords": ["docx", "word", "preview", "viewer", "office"],
+  "keywords": ["docx", "word", "preview", "previewer", "viewer", "office"],
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "docx-viewer.preview",
-        "title": "Preview DOCX File",
-        "category": "DOCX Viewer"
+        "command": "docx-previewer.preview",
+        "title": "Preview Docx File",
+        "category": "Docx Previewer"
       }
     ],
     "customEditors": [
       {
-        "viewType": "docx-viewer.editor",
-        "displayName": "DOCX Preview",
+        "viewType": "docx-previewer.editor",
+        "displayName": "Docx Preview",
         "selector": [
           {
             "filenamePattern": "*.docx"
